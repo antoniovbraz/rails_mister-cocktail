@@ -1,12 +1,13 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-md-8">
-      <h1>Create a new cocktail</h1>
+      <h1>Criar um drink</h1>
 
       <%= simple_form_for @cocktail do |f| %>
-        <%= f.input :name %>
-        <%= f.button :submit, class: 'btn btn-primary' %>
+      <%= f.input :name %>
+      <%= f.button :submit, 'Criar Drink', class: 'btn btn-primary' %>
       <% end %>
+      <%= link_to "Voltar para a home", root_path, class: "btn btn-primary btn-lg mt-3" %>
     </div>
   </div>
 </div>
